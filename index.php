@@ -7,18 +7,7 @@
   </head>
   <body>
     <!-- Logo and Nav bar -->
-    <header>
-      <nav>
-        <img class="logo" src="./laptop-3d-model1.png" alt="Logo">
-        <ul>
-          <li><a class="active" href="./index.html">Home</a></li>
-          <li><a href='./display.html'>Display</a></li>
-          <li><a href='./add.html'>Add</a></li>
-          <li><a href='./delete.html'>Delete</a></li>
-          <li><a href='./contact.html'>Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <?php include 'header.php' ?>
     <!-- Logo and Nav bar -->
 
     <!-- About TechipLtd. -->
@@ -51,7 +40,5 @@
     </section>
 
     <!-- footer -->
-    <footer>
-      <p>&copy; 2019 TechipLtd.com</p>
-    </footer>
+    <?php include('footer.php'); ?>
   </body>
