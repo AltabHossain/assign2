@@ -24,11 +24,11 @@
        <th>PATH</th>
        </tr>
 
-      <?php include 'actiondisplay.php' ?>
+      <?php include 'action_display.php' ?>
       </table>
 
 	<!-- set this form to POST method and target this form to delete.php -->
-  <form id="form2" name="form2" method="post" action="actiondelete.php">
+  <form id="form2" name="form2" method="post" action="action_delete.php">
   <br />
   <label for="id">Enter the ID of the record to delete:</label>
   <input name="id" type="text" id="id" /><br><br>

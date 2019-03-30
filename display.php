@@ -23,7 +23,7 @@
        <th>QUANTITY</th>
        <th>PATH</th>
        </tr>
-     <?php include 'actiondisplay.php' ?>
+     <?php include 'action_display.php' ?>
 
       </table>
     <!-- footer -->
