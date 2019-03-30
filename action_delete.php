@@ -23,7 +23,7 @@
     if (@mysql_affected_rows() > 0){
         echo "Records were deleted successfully.";
     } else {
-        echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);
+        echo "ERROR: No records found in the database" . @mysql_error($dbh);
     }
     ?>
 
