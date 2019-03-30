@@ -12,7 +12,7 @@
     <!-- Logo and Nav bar -->
 
     <h1>Display</h1>
-    <a href="./index.php">Back to the main page</a>
+    <a href="./index.php">Back to the main page</a><br><br>
 
     <!-- Embedded PHP code with Table -->
       <table border="1" width="30%" height="30%">
