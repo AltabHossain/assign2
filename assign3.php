@@ -88,3 +88,7 @@ input {
   display: inline-block;
   float: left;
 }
+table {
+margin-left: auto;
+margin-right: auto;
+}
