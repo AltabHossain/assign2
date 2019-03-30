@@ -3,7 +3,7 @@
   <head>
     <meta charset='UTF-8'/>
     <title>TechipLtd.</title>
-    <link rel='stylesheet' href='assign3.css'/>
+    <link rel='stylesheet' href='assign3.php'/>
   </head>
   <body>
     <!-- Logo and Nav bar -->

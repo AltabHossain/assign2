@@ -1,3 +1,6 @@
+<?php
+header("Content-type: text/css; charset: UTF-8");
+?>
 /* Nav bar */
 ul {
   list-style-type: none;
@@ -68,4 +71,20 @@ h1 {
 }
 iframe {
     border-style: none;
+}
+form {
+  margin-left: 450px;
+}
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    //margin-left: 500px;
+    margin-right: 5px;
+}
+input {
+  display: inline-block;
+  float: left;
 }
