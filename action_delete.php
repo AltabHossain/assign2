@@ -1,4 +1,4 @@
-<?php include 'config.php' ?>
+<?php include 'connection.php' ?>
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -23,7 +23,7 @@
     if (@mysql_affected_rows() > 0){
         echo "Records were deleted successfully.";
     } else {
-        echo "ERROR: No records found with id $id. " . @mysql_error($link);
+        echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);
     }
     ?>
 
