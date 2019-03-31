@@ -15,17 +15,8 @@
     <a href="./index.php">Back to the main page</a><br><br>
 
     <!-- Embedded PHP code with Table -->
-      <table border="1" width="30%" height="30%">
-       <tr>
-       <th>ID</th>
-       <th>NAME</th>
-       <th>PRICE</th>
-       <th>QUANTITY</th>
-       <th>PATH</th>
-       </tr>
-     <?php include 'action_display.php' ?>
+    <?php include './action_display.php' ?>
 
-      </table>
     <!-- footer -->
     <?php include('footer.php'); ?>
   </body>

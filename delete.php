@@ -1,4 +1,3 @@
-<?php include 'connection.php' ?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -15,28 +14,21 @@
     <a href="./index.php">Back to the main page</a> <br><br>
 
     <!-- Embedded PHP code with Table -->
-      <table border="1" width="30%" height="30%">
-       <tr>
-       <th>ID</th>
-       <th>NAME</th>
-       <th>PRICE</th>
-       <th>QUANTITY</th>
-       <th>PATH</th>
-       </tr>
 
-      <?php include 'action_display.php' ?>
-      </table>
+    <?php include 'action_display.php' ?>
 
-	<!-- set this form to POST method and target this form to delete.php -->
-  <form id="form2" name="form2" method="post" action="action_delete.php">
-  <br />
-  <label for="id">Enter the ID of the record to delete:</label>
-  <input name="id" type="text" id="id" /><br><br>
-<p>
-  <input type="submit" name="submit" value="Delete this record" />
-</p>
-  </form>
- <!-- footer -->
- <?php include('footer.php')?>
-</body>
+  	<!-- set this form to POST method and target this form to delete.php -->
+    <form id="delete-form" name="delete-form" method="post" action="action_delete.php"> <br />
+      <label for="id">Enter the ID of the record to delete:</label>
+      <input name="id" type="text" id="id" /><br><br>
+      <input type="submit" name="submit" value="Delete this record"  onclick="myFunction()" /><br>
+    </form>
+    <!-- footer -->
+    <?php include('footer.php')?>
+    <script>
+      function myFunction() {
+        location.reload();
+      }
+   </script>
+  </body>
 </html>

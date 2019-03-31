@@ -1,33 +1,17 @@
-<?php include 'connection.php' ?>
+<?php
+  include 'connection.php';
 
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <title>Delete</title>
-    <link rel='stylesheet' href='assign3.php'/>
-  </head>
-  <body>
-    <!-- Logo and Nav bar -->
-    <?php include 'header.php' ?>
-    <!-- Logo and Nav bar -->
+  // Get value of id from the web form
+  $id=$_POST['id'];
 
-    <h1>Delete</h1>
-    <a href="./index.php">Back to the main page</a></br></br>
+  $sql = "DELETE FROM products WHERE id='$id'";
 
-    <?php
-    // Get value of id from the web form
-    $id=$_POST['id'];
-    $sql = @mysql_query ("delete from products where id='$id'");
+  $sql = mysqli_query ($dbh,$sql);
 
-    if (@mysql_affected_rows() > 0){
-        echo "Records were deleted successfully.";
-    } else {
-        echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);
-    }
-    ?>
-
- <!-- footer -->
- <?php include('footer.php')?>
-</body>
-</html>
+  if (mysqli_affected_rows() > 0) {
+      echo "Records were deleted successfully.";
+  }
+  else {
+      echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);
+  }
+?>
