@@ -8,8 +8,10 @@
 
   $sql = mysqli_query ($dbh,$sql);
 
-  if (mysqli_affected_rows() > 0) {
+  if (mysqli_affected_rows($dbh) > 0) {
       echo "Records were deleted successfully.";
+      include 'action_display.php';
+      header('location:./delete.php');
   }
   else {
       echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);

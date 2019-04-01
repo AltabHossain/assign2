@@ -31,4 +31,5 @@ echo "Could not insert data.";
 //CLOSING DATABASE CONNECTION
 mysqli_close($dbh);
 }
+header('location:./add.php');
 ?>

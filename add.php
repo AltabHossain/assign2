@@ -4,6 +4,7 @@
     <meta charset='UTF-8'/>
     <title>Add</title>
     <link rel='stylesheet' type="text/css" href='./assign3.php'/>
+    <script type="text/javascript" src="./validate.js"></script>
   </head>
   <body>
     <!-- Logo and Nav bar -->
@@ -11,11 +12,11 @@
     <!-- Logo and Nav bar -->
 
     <h1>Add</h1>
-    <form action="./action_add.php" enctype="multipart/form-data" autocomplete="on" method="post">
+    <form name="input"action="./action_add.php" method="post" onsubmit="validate_price()">
       <label for="Name">Enter Name:</label>
-      <input id="Name" type="text" name="name" size="32" placeholder="John"><br><br>
+      <input id="Name" type="text" name="name" size="32" placeholder="Apple"><br><br>
       <label for="price">Enter Price:</label>
-      <input id="price" type="number" name="price" placeholder="500"><br><br>
+      <input id="price" type="number" name="price" step="0.01" placeholder="500.50"><br><br>
       <label for="Qty">Enter Quantity:</label>
       <input id="Qty" type="number" name="qty" placeholder="5"><br><br>
       <label for="Path">Enter image path:</label>
