@@ -29,7 +29,7 @@
        <td><?php echo $name;?></td>
        <td><?php echo $price;?></td>
        <td><?php echo $qty;?></td>
-       <td><?php echo $path;?></td>
+       <td><img src="images/<?php echo $path; ?>" alt="Image.jpg"/></td>
        </td>
      </tr>
    <?php } ?>
