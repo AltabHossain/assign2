@@ -47,6 +47,10 @@ nav {
 nav img {
   background-color: white;
 }
+img {
+  width: 55px;
+  height: 35px;
+}
 
 body {
 background-color: #CCFFE5;
