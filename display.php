@@ -11,11 +11,12 @@
     <?php include 'header.php' ?>
     <!-- Logo and Nav bar -->
 
-    <h1>Display</h1>
-    <a href="./index.php">Back to the main page</a><br><br>
+    <h1>All products</h1>
 
     <!-- Embedded PHP code with Table -->
-    <?php include './action_display.php' ?>
+    <?php include './action_display.php' ?><br><br><br>
+
+    <a href="./index.php">Back to the main page</a><br><br>
 
     <!-- footer -->
     <?php include('footer.php'); ?>

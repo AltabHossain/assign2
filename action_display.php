@@ -25,11 +25,11 @@
      $path = $rows['path'];
   ?>
      <tr>
-       <td><?php echo $id;?></td>
+       <td><?php printf("%06d",$id);?></td>
        <td><?php echo $name;?></td>
        <td><?php echo $price;?></td>
        <td><?php echo $qty;?></td>
-       <td><img src="images/<?php echo $path; ?>" alt="Image.jpg"/></td>
+       <td><img src="images/<?php echo $path; ?>" alt="Image coming soon"/></td>
        </td>
      </tr>
    <?php } ?>
