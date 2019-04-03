@@ -4,16 +4,11 @@ function validate_id(){
   var id = document.forms["delete"]["id"].value; // getting the user data
   if(id==null || id=="" ){ //alert if the data is empty
     alert("Please enter valid id (eg. 10)!");
-    window.location.replace("./delete.php");
     return false;
   }
   else if(!/^[0-9]{6}$/.test(id)){ //alert if the data is not a 6 digit number
     alert("Entered data is invalid. Should be a 6 digit number (eg. 000001)!");
-    window.location.replace("./delete.php");
     return false;
-  }
-  else {
-    return true;
   }
 }
 

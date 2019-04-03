@@ -8,17 +8,13 @@
 
   $sql = mysqli_query ($dbh,$sql);
 
-  if (mysqli_affected_rows($dbh) > 0) {
+  if (mysqli_affected_rows($dbh) == 1) {
       echo "Records were deleted successfully.";
       include 'action_display.php';
       header('location:./delete.php');
   }
   else {
-      echo "ERROR: No records found with Id $id. " . @mysql_error($dbh);
+      echo "ERROR: No records found with Id $id.";
+      header('location:./delete.php');
   }
 ?>
-
- <!-- footer -->
- <?php include('footer.php')?>
-</body>
-</html>
