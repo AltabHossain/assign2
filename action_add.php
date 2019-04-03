@@ -21,8 +21,8 @@ $result = mysqli_query($dbh, $sql);
 
 //CHECKING IF THE QUERY AFFECTED A ROW USING mysqli_affected_rows()
 if(mysqli_affected_rows($dbh) == 1){
-//positive response
-echo "Data added successfully.";
+  //positive response
+  echo "Data added successfully.";
 } else {
 //negative response
 echo "Could not insert data.";
