@@ -13,7 +13,7 @@
         <th>NAME</th>
         <th>PRICE</th>
         <th>QUANTITY</th>
-        <th>PATH</th>
+        <th>IMAGE FILE NAME</th>
       </tr>
   <?php
    //loop inside results..

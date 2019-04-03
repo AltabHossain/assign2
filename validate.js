@@ -2,7 +2,6 @@ function validate_id(){
   //check id
 
   var id = document.forms["delete"]["id"].value; // getting the user data
-  document.write(id);
   if(id==null || id=="" ){ //alert if the data is empty
     alert("Please enter valid id (eg. 10)!");
     window.location.replace("./delete.php");
@@ -12,6 +11,9 @@ function validate_id(){
     alert("Entered data is invalid. Should be a 6 digit number (eg. 000001)!");
     window.location.replace("./delete.php");
     return false;
+  }
+  else {
+    return true;
   }
 }
 
