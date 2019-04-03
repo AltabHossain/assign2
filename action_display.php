@@ -7,7 +7,7 @@
 ?>
  <?php if(mysqli_num_rows($result)>0) { ?>
 
-   <table border="1" width="30%" height="30%">
+   <table border="1" width="40%" height="30%">
       <tr>
         <th>ID</th>
         <th>NAME</th>
