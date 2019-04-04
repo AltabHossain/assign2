@@ -18,9 +18,9 @@ function validate_data(){
   var name = document.forms["input"]["name"].value; // getting the user data
   var price = document.forms["input"]["price"].value; // getting the user data
   var qty = document.forms["input"]["qty"].value; // getting the user data
-  var path = document.forms["input"]["path"].value; // getting the user data
+  //var path = document.forms["input"]["path"].value; // getting the user data
 
-  if((name==null || name=="") || (price==null || price=="") || (qty==null || qty=="") || (path==null || path=="")){ //alert if the data is empty
+  if((name==null || name=="") || (price==null || price=="") || (qty==null || qty=="")){ //alert if the data is empty
     alert("Product information are missing!");
     return false;
   } else if(!/^[0-9]+([.][0-9][0-9])?$/.test(price)){ //alert if the data is not a 6 digit number

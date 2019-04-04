@@ -24,6 +24,7 @@
       <input type="submit" value="Add"><br><br>
     </form>
     <?php include 'action_display.php'; ?>
+    <br><br>
     <a href="./index.php">Back to the main page</a>
 
     <!-- footer -->
