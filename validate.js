@@ -13,6 +13,17 @@ function validate_id(){
 }
 
 function validate_data(){
+  var name = document.forms["input"]["name"].value; // getting the user data
+  var price = document.forms["input"]["price"].value; // getting the user data
+  var qty = document.forms["input"]["qty"].value; // getting the user data
+  var path = document.forms["input"]["path"].value; // getting the user data
+
+  if((name==null || name=="") || (price==null || price=="") || (qty==null || qty=="") || (path==null || path=="") ){ //alert if the data is empty
+    alert("Product information are missing!");
+    return false;
+  }
+  
+/*
   //check price
   var price = document.forms["input"]["price"].value; // getting the user data
   if(price==null || price=="" ){ //alert if the data is empty
@@ -23,4 +34,5 @@ function validate_data(){
       //alert("Invalid. Should be float with 2 decimals!");
       return false;
   }
+  */
 }
