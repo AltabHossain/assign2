@@ -7,7 +7,10 @@ $path=$_POST['path'];
 
 //Check all input fields are not blank
 If (($name == “” || $name == null) || ($price == “” || $price == null) ||
-($qty == “” || $qty == null) || ($path == “” || $path == null)) {
+($qty == “” || $qty == null)) {
+  /*If (($name == “” || $name == null) || ($price == “” || $price == null) ||
+  ($qty == “” || $qty == null) || ($path == “” || $path == null)) {*/
+
   //echo "Product information are missing!";
   echo "<script type='text/javascript'>document.location='./add.php';</script>";
 }

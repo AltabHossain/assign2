@@ -24,10 +24,10 @@ function validate_data(){
     alert("Product information are missing!");
     return false;
   } else if(!/^[0-9]+([.][0-9][0-9])?$/.test(price)){ //alert if the data is not a 6 digit number
-      alert("Invalid. Should be >=0.00 with 2 decimals!");
+      alert("Invalid. Price should be >=0.00 with 2 decimals!");
       return false;
   } else if(!/^[0-9]$/.test(qty)){ //alert if the data is not a 6 digit number
-      alert("Invalid. Should be >=0 without decimal point!");
+      alert("Invalid. Qty should be >=0 without decimal point!");
       return false;
   }
   else {
