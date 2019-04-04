@@ -20,6 +20,5 @@
       //echo "ERROR: No records found with Id $id.";
       //header('location:./delete.php');
       echo "<script type='text/javascript'>document.location='./delete.php';</script>";
-
   }
 ?>
