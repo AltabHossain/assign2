@@ -12,7 +12,7 @@
     <!-- Logo and Nav bar -->
 
     <h1>Add</h1>
-    <form name="input" action="./action_add.php" method="post" onsubmit="validate_data()">
+    <form name="input" action="./action_add.php" method="post" onsubmit=" return validate_data()">
       <label for="Name">Enter Name:</label>
       <input id="Name" type="text" name="name" size="32" placeholder="Apple"><br><br>
       <label for="price">Enter Price:</label>
