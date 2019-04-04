@@ -21,6 +21,7 @@
       ScriptMessage("Records were deleted successfully.");
   }
   else {
-      echo "<script type='text/javascript'>document.location='./delete.php';</script>";
+    ScriptMessage("Records not found with id.".$id);
+      //echo "<script type='text/javascript'>document.location='./delete.php';</script>";
   }
 ?>
