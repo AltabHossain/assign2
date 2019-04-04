@@ -19,10 +19,21 @@ function validate_data(){
   var path = document.forms["input"]["path"].value; // getting the user data
 
   if((name==null || name=="") || (price==null || price=="") || (qty==null || qty=="") || (path==null || path=="") ){ //alert if the data is empty
+  if((name==null || name=="") || (price==null || price=="") || (qty==null || qty=="") || (path==null || path=="")){ //alert if the data is empty
     alert("Product information are missing!");
     return false;
+  } else if(!/^[0-9]+([.][0-9][0-9])?$/.test(price)){ //alert if the data is not a 6 digit number
+      alert("Invalid. Should be >=0.00 with 2 decimals!");
+      return false;
+  } else if(!/^[0-9]$/.test(qty)){ //alert if the data is not a 6 digit number
+      console.log(qty);
+      alert("Invalid. Should be >=0 without decimal point!" + qty + "dolar");
+      return false;
   }
-  
+  else {
+    return true;
+  }
+
 /*
   //check price
   var price = document.forms["input"]["price"].value; // getting the user data
