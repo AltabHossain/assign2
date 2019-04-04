@@ -2,7 +2,7 @@
  // load the values into variables: host, username, passwd, database
 $host='localhost'; // Host name.
 $db_user='root'; // MySQL username.
-$db_password=''; // MySQL password.
+$db_password='root'; // MySQL password.
 $database=('techipltd'); // Database name.
 
 // Connect to database server.
