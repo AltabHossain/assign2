@@ -9,6 +9,8 @@ function validate_id(){
   else if(!/^[0-9]{6}$/.test(id)){ //alert if the data is not a 6 digit number
     alert("Entered data is invalid. Should be a 6 digit number (eg. 000001)!");
     return false;
+  } else {
+    return true;
   }
 }
 
