@@ -28,8 +28,7 @@ function validate_data(){
       alert("Invalid. Should be >=0.00 with 2 decimals!");
       return false;
   } else if(!/^[0-9]$/.test(qty)){ //alert if the data is not a 6 digit number
-      console.log(qty);
-      alert("Invalid. Should be >=0 without decimal point!" + qty + "dolar");
+      alert("Invalid. Should be >=0 without decimal point!");
       return false;
   }
   else {
