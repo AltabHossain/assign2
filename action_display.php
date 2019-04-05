@@ -7,7 +7,7 @@
 ?>
  <?php if(mysqli_num_rows($result)>0) { ?>
 
-   <table border="1" width="40%" height="30%">
+   <table>
       <tr>
         <th>ID</th>
         <th>NAME</th>
@@ -30,7 +30,6 @@
        <td><?php echo $price;?></td>
        <td><?php echo $qty;?></td>
        <td><img src="images/<?php echo $path; ?>" alt="Image coming soon"/></td>
-       </td>
      </tr>
    <?php } ?>
  <?php } ?>

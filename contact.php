@@ -11,7 +11,7 @@
     <!-- Logo and Nav bar -->
 
   <address>
-    <h1>Contacts Us</h1>
+    Contacts Us:<br>
     TechipLtd.com<br>
     123 Somewhere St.<br>
     Toronto, ON

@@ -101,3 +101,12 @@ margin-right: auto;
   -webkit-appearance: none;
   margin: 0;
 }
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
