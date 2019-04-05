@@ -4,7 +4,7 @@
     <meta charset='UTF-8'/>
     <title>Add</title>
     <link rel='stylesheet' type="text/css" href='./assign3.php'/>
-    <script type="text/javascript" src="./validate.js"></script>
+    <script src="./validate.js"></script>
   </head>
   <body>
     <!-- Logo and Nav bar -->
