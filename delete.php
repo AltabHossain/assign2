@@ -14,9 +14,9 @@
     <h1>Delete a product?</h1>
     <?php include 'action_display.php' ?><br><br>
   	<!-- set this form to POST method and target this form to delete.php -->
-    <form name="delete" action="./action_delete.php" method="post" onsubmit="validate_id()">
+    <form name="delete" action="./action_delete.php" method="post" onsubmit=" return validate_id()">
       <label for="id">Enter the ID of the product to delete:</label>
-      <input name="id" type="number" id="id" placeholder="Please enter product id (eg.000001)"><br><br><br>
+      <input name="id" class="input-no-spinner" type="number" id="id" placeholder="Enter id (eg.000001)"><br><br><br>
       <input type="submit" value="Delete this record"/><br>
     </form>
     <br><br><br>

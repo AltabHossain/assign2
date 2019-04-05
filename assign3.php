@@ -96,3 +96,8 @@ table {
 margin-left: auto;
 margin-right: auto;
 }
+/* remove the spinner */
+.input-no-spinner::-webkit-outer-spin-button, .input-no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
